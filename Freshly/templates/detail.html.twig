@@ -1,0 +1,9 @@
+{% if ea.crud.currentAction == 'detail' %}
+   {{ field.value|length }}
+{% else %}
+   {% for details in field.value %}
+      <li> 
+         {{ detail.detail }}
+      </li>
+   {% endfor %}
+{% endif %}
